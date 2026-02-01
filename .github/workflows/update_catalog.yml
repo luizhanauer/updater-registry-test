@@ -29,4 +29,8 @@ jobs:
           git config --global user.name 'Updater-Registry-Bot'
           git config --global user.email 'updater-registry-bot@users.noreply.github.com'
           git add catalog.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update catalog hashes [skip ci]" && git push)
+          # Lógica de verificação:
+          # git diff --staged --quiet retorna erro (exit 1) se houver mudanças para commitar.
+          # O "||" pega esse erro e executa o commit.
+          # Se não houver mudanças, o comando termina silenciosamente sem erro.
+          git diff --staged --quiet || (git commit -m "Update indexes [skip ci]" && git push)
