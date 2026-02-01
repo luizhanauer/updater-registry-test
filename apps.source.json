@@ -1,0 +1,53 @@
+[
+  {
+    "id": "rustdesk",
+    "name": "RustDesk",
+    "description": "Acesso remoto open-source, alternativa ao TeamViewer.",
+    "icon_url": "https://rustdesk.com/favicon.png",
+    "package_name": "rustdesk",
+    "install_type": "deb",
+    "strategy": "github_release",
+    "config": {
+      "repo": "rustdesk/rustdesk",
+      "asset_filter": "x86_64.deb"
+    }
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "description": "Chat de voz e texto para gamers e comunidades.",
+    "icon_url": "https://assets-global.website-files.com/6257adef93867e56f84d3092/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
+    "package_name": "discord",
+    "install_type": "deb",
+    "strategy": "direct_url_head",
+    "config": {
+      "url": "https://discord.com/api/download?platform=linux&format=deb",
+      "regex": "discord-([0-9.]+)\\.deb"
+    }
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "description": "Editor de código fonte desenvolvido pela Microsoft.",
+    "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
+    "package_name": "code",
+    "install_type": "deb",
+    "strategy": "direct_url_head",
+    "config": {
+      "url": "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64",
+      "regex": "code_([0-9.]+)-"
+    }
+  },
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "description": "Navegador web rápido e seguro do Google.",
+    "icon_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg",
+    "package_name": "google-chrome-stable",
+    "install_type": "deb",
+    "strategy": "direct_static",
+    "config": {
+      "url": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+    }
+  }
+]
