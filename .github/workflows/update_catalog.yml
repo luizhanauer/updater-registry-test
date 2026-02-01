@@ -17,6 +17,8 @@ jobs:
           go-version: '1.25.6'
 
       - name: Run Generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: go run cmd/generator/main.go
 
       - name: Commit and Push if changed
