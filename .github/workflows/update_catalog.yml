@@ -1,0 +1,27 @@
+name: Update Catalog
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Roda a cada 6 horas
+  workflow_dispatch:      # Permite rodar manualmente clicando num botão
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Go
+        uses: actions/setup-go@v6.2.0
+        with:
+          go-version: '1.25.6'
+
+      - name: Run Generator
+        run: go run cmd/generator/main.go
+
+      - name: Commit and Push if changed
+        run: |
+          git config --global user.name 'Updater Bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git add catalog.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update catalog hashes [skip ci]" && git push)
