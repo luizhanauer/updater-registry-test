@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit and Push if changed
         run: |
-          git config --global user.name 'Updater Bot'
-          git config --global user.email 'bot@noreply.github.com'
+          git config --global user.name 'Updater-Registry-Bot'
+          git config --global user.email 'updater-registry-bot@users.noreply.github.com'
           git add catalog.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update catalog hashes [skip ci]" && git push)
