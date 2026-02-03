@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-01T16:10:32.658964303Z",
+  "last_updated": "2026-02-03T00:34:12.435681401Z",
   "apps": {
     "chrome": {
       "id": "chrome",
@@ -20,10 +20,10 @@
       "icon_url": "https://assets-global.website-files.com/6257adef93867e56f84d3092/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png",
       "package_name": "discord",
       "install_type": "deb",
-      "latest_version": "0.0.122",
-      "download_url": "https://stable.dl2.discordapp.net/apps/linux/0.0.122/discord-0.0.122.deb",
-      "checksum": "152219b721a35094fa60936d0b05b0a56d5202dd734be9e152568a85179c3794",
-      "size": 108129244
+      "latest_version": "0.0.123",
+      "download_url": "https://stable.dl2.discordapp.net/apps/linux/0.0.123/discord-0.0.123.deb",
+      "checksum": "dc5d3dc83cb3ad7ffbb728adf0abc7fceb56757c13819b8be7b0f0c0448b4ee5",
+      "size": 108129294
     },
     "rustdesk": {
       "id": "rustdesk",
