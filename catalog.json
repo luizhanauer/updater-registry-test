@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-04T00:30:48.221574954Z",
+  "last_updated": "2026-02-05T00:33:55.904592396Z",
   "apps": {
     "chrome": {
       "id": "chrome",
@@ -44,10 +44,10 @@
       "icon_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
       "package_name": "code",
       "install_type": "deb",
-      "latest_version": "1.108.2",
-      "download_url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/c9d77990917f3102ada88be140d28b038d1dd7c7/code_1.108.2-1769004815_amd64.deb",
-      "checksum": "af054638b3f0638ad117f636d8ca559e0b310d69d9369365c7f631fe81e0e7d1",
-      "size": 114493978
+      "latest_version": "1.109.0",
+      "download_url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/bdd88df003631aaa0bcbe057cb0a940b80a476fa/code_1.109.0-1770171879_amd64.deb",
+      "checksum": "5c45e63e503d608bfd02015073c18d7f5ec670fdbad270af108524ebfc53da42",
+      "size": 116502670
     }
   }
 }
